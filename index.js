@@ -15,6 +15,23 @@ const checkArmstrong = (num) => {
   }
 }
 
+const checkArmstrongBetter = (num) => {
+  let numNew = num;
+  let total = 0;
+  const len = num.toString().length;
+  for (let i = 0; i < len; i++) {
+    let dig = numNew % 10;
+    total += Math.pow(dig, 3);
+    numNew = Math.floor(numNew / 10);
+  }
+  if (total === num) {
+    console.log("The number is an armstrong number.")
+  } else {
+    console.log("The number is NOT an armstrong number.");
+  }
+
+}
+
 const checkPrime = (num) => {
   for (let i = 2; i <= num / 2; i++) {
     if (num % i === 0) {
@@ -26,5 +43,6 @@ const checkPrime = (num) => {
   console.log("The number is a prime number.");
 }
 
-checkArmstrong(arm);
 checkPrime(prime);
+checkArmstrong(arm);
+checkArmstrongBetter(arm);
