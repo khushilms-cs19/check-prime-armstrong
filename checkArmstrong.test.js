@@ -2,11 +2,11 @@ const { checkArmstrong } = require("./checkArmstrong")
 
 
 test(`check if 17 is an armstrong number`, () => {
-  expect(checkArmstrong(17)).toBe(true);
+  expect(checkArmstrong(17)).toBe(false);
 });
 
 test(`check if 153 is an armstrong number`, () => {
-  expect(checkArmstrong(153)).toBe(false);
+  expect(checkArmstrong(153)).toBe(true);
 });
 
 test(`check if given string type to checkArmstrong`, () => {

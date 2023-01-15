@@ -1,17 +1,17 @@
 const { checkPrime } = require("./checkPrime");
 
 test(`check if 17 is a prime number`, () => {
-  expect(checkArmstrong(153)).toBe(true);
+  expect(checkPrime(17)).toBe(true);
 });
 
-test(`check if 153 is a prime number`, () => {
-  expect(checkArmstrong(17)).toBe(false);
+test(`check if 64 is a prime number`, () => {
+  expect(checkPrime(64)).toBe(false);
 });
 
-test(`check if given string type to checkArmstrong`, () => {
-  expect(() => checkArmstrong("153")).toThrow("Invalid Datatype");
+test(`check if given string type to checkPrime`, () => {
+  expect(() => checkPrime("153")).toThrow("Invalid Datatype");
 });
 
-test(`check if given null to checkArmstrong`, () => {
-  expect(() => checkArmstrong(null)).toThrow("Invalid Datatype");
+test(`check if given null to checkPrime`, () => {
+  expect(() => checkPrime(null)).toThrow("Invalid Datatype");
 });

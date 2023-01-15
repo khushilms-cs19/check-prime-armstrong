@@ -34,6 +34,9 @@ const checkArmstrongBetter = (num) => {
 const myFunc = () => ({ name: "khushil" });
 
 const checkPrime = (num) => {
+  if (num === 2 || num === 3) {
+    return true;
+  }
   for (let i = 2; i <= num / 2; i++) {
     if (num % i === 0) {
       console.log("The number is NOT a prime number.");
