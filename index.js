@@ -31,6 +31,7 @@ const checkArmstrongBetter = (num) => {
   }
 
 }
+const myFunc = () => ({ name: "khushil" });
 
 const checkPrime = (num) => {
   for (let i = 2; i <= num / 2; i++) {
@@ -43,6 +44,10 @@ const checkPrime = (num) => {
   console.log("The number is a prime number.");
 }
 
-checkPrime(prime);
-checkArmstrong(arm);
-checkArmstrongBetter(arm);
+
+
+export default {
+  checkArmstrong,
+  checkArmstrongBetter,
+  checkPrime
+}
